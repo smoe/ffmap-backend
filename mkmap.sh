@@ -15,9 +15,6 @@ fi
 
 cd "$(dirname "$0")"/
 
-./ffhlwiki.py http://freifunk.metameute.de/wiki/Knoten > aliases_hl.json
-./ffhlwiki.py http://freifunk.metameute.de/wiki/Moelln:Knoten > aliases_moelln.json
-
 EXTRABIN=$HOME
 
 PATH=$EXTRABIN:$PATH ./bat2nodes.py -A -d $DEST
